@@ -428,7 +428,10 @@ The repository includes [`test.py`](./test.py), an early controlled experiment t
 
 The current test uses the Anthropic Python SDK with `claude-sonnet-4-6`.
 
-Unlike the earlier prototype, `test.py` now loads the metric ontology directly from:
+**Query**
+```
+A company's current ratio dropped from 1.8 to 0.9 this quarter, and its loan covenant requires current ratio to stay above 1.0 at each quarter-end.  Has the covenant been breached, and what does that trigger contractually?
+```
 
 ```text
 Schemas/fin_metrics_ontology_v2.json
