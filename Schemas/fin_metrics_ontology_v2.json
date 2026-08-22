@@ -1,0 +1,2450 @@
+[
+  {
+    "metric": "cash",
+    "type": "actual",
+    "definition": "Cash and cash equivalents held by the company.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "cash",
+      "inputs": [
+        {
+          "metric": "cash",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Cash and Cash Equivalents",
+        "Cash"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "marketable_securities",
+    "type": "actual",
+    "definition": "Short-term investments that can be quickly converted to cash.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "marketable_securities",
+      "inputs": [
+        {
+          "metric": "marketable_securities",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Marketable Securities",
+        "Short-term Investments"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "accounts_receivable",
+    "type": "actual",
+    "definition": "Amounts owed to the company by customers for goods/services delivered.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "accounts_receivable",
+      "inputs": [
+        {
+          "metric": "accounts_receivable",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Accounts Receivable",
+        "Trade Receivables"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "inventory",
+    "type": "actual",
+    "definition": "Value of goods held for sale or production.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "inventory",
+      "inputs": [
+        {
+          "metric": "inventory",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Inventory",
+        "Inventories"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": "IFRS prohibits LIFO; US GAAP permits LIFO. Inventory write-down reversal rules also differ.",
+    "source": "company filing"
+  },
+  {
+    "metric": "prepaid_expenses",
+    "type": "actual",
+    "definition": "Expenses paid in advance not yet consumed.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "prepaid_expenses",
+      "inputs": [
+        {
+          "metric": "prepaid_expenses",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Prepaid Expenses"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "current_assets",
+    "type": "actual",
+    "definition": "Assets expected to be realized, sold, or consumed in the normal operating cycle, held for trading, expected to be realized within twelve months, or qualifying as cash/cash equivalents.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "current_assets",
+      "inputs": [
+        {
+          "metric": "current_assets",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Total Current Assets"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "ppe",
+    "type": "actual",
+    "definition": "Property, plant and equipment, net of accumulated depreciation and impairment.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "ppe",
+      "inputs": [
+        {
+          "metric": "ppe",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Property, Plant and Equipment, Net",
+        "Net PP&E"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": "IFRS permits either a cost model or revaluation model after recognition; US GAAP generally uses historical cost less depreciation and impairment.",
+    "source": "company filing"
+  },
+  {
+    "metric": "goodwill",
+    "type": "actual",
+    "definition": "Premium paid over fair value in acquisitions.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "goodwill",
+      "inputs": [
+        {
+          "metric": "goodwill",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Goodwill"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "intangible_assets",
+    "type": "actual",
+    "definition": "Identifiable non-physical assets such as patents, trademarks, licenses and customer relationships, excluding goodwill.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "intangible_assets",
+      "inputs": [
+        {
+          "metric": "intangible_assets",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Intangible Assets",
+        "Other Intangible Assets"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "long_term_investments",
+    "type": "actual",
+    "definition": "Investments not expected to be liquidated within a year.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "long_term_investments",
+      "inputs": [
+        {
+          "metric": "long_term_investments",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Long-term Investments"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "total_assets",
+    "type": "actual",
+    "definition": "Sum of all assets owned by the company.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "total_assets",
+      "inputs": [
+        {
+          "metric": "total_assets",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Total Assets"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "accounts_payable",
+    "type": "actual",
+    "definition": "Amounts owed by the company to suppliers.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "accounts_payable",
+      "inputs": [
+        {
+          "metric": "accounts_payable",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Accounts Payable",
+        "Trade Payables"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "short_term_debt",
+    "type": "actual",
+    "definition": "Short-term borrowings due within one year, excluding the current portion of long-term debt in this normalized ontology.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "short_term_debt",
+      "inputs": [
+        {
+          "metric": "short_term_debt",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Short-term Debt",
+        "Short-term Borrowings"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "accrued_expenses",
+    "type": "actual",
+    "definition": "Expenses incurred but not yet paid.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "accrued_expenses",
+      "inputs": [
+        {
+          "metric": "accrued_expenses",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Accrued Expenses",
+        "Accrued Liabilities"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "current_portion_long_term_debt",
+    "type": "actual",
+    "definition": "Current portion of long-term borrowings contractually due within one year.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "current_portion_long_term_debt",
+      "inputs": [
+        {
+          "metric": "current_portion_long_term_debt",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Current Portion of Long-term Debt"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "current_liabilities",
+    "type": "actual",
+    "definition": "Obligations expected to be settled in the normal operating cycle, held for trading, due within twelve months, or for which the company lacks an unconditional right to defer settlement beyond that period.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "current_liabilities",
+      "inputs": [
+        {
+          "metric": "current_liabilities",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Total Current Liabilities"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "long_term_debt",
+    "type": "actual",
+    "definition": "Non-current portion of interest-bearing debt due beyond one year, excluding amounts classified as current.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "long_term_debt",
+      "inputs": [
+        {
+          "metric": "long_term_debt",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Long-term Debt"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "total_debt",
+    "type": "derived",
+    "definition": "Total interest-bearing debt: short-term borrowings plus the current portion of long-term debt plus non-current long-term debt.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "short_term_debt + current_portion_long_term_debt + long_term_debt",
+      "inputs": [
+        {
+          "metric": "short_term_debt",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "current_portion_long_term_debt",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "long_term_debt",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "short_term_debt",
+        "direction": "positive"
+      },
+      {
+        "metric": "current_portion_long_term_debt",
+        "direction": "positive"
+      },
+      {
+        "metric": "long_term_debt",
+        "direction": "positive"
+      }
+    ],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "deferred_tax_liabilities",
+    "type": "actual",
+    "definition": "Taxes owed in future periods due to timing differences.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "deferred_tax_liabilities",
+      "inputs": [
+        {
+          "metric": "deferred_tax_liabilities",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Deferred Tax Liabilities"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "pension_obligations",
+    "type": "actual",
+    "definition": "Future pension payment obligations to employees.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "pension_obligations",
+      "inputs": [
+        {
+          "metric": "pension_obligations",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Pension Obligations",
+        "Pension Liabilities"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "total_liabilities",
+    "type": "actual",
+    "definition": "Sum of all obligations owed by the company.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "total_liabilities",
+      "inputs": [
+        {
+          "metric": "total_liabilities",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Total Liabilities"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "common_stock",
+    "type": "actual",
+    "definition": "Par value of shares issued to shareholders.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "common_stock",
+      "inputs": [
+        {
+          "metric": "common_stock",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Common Stock"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "retained_earnings",
+    "type": "actual",
+    "definition": "Cumulative net income retained rather than distributed as dividends.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "retained_earnings",
+      "inputs": [
+        {
+          "metric": "retained_earnings",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Retained Earnings",
+        "Accumulated Deficit"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "additional_paid_in_capital",
+    "type": "actual",
+    "definition": "Amount received from shareholders above par value.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "additional_paid_in_capital",
+      "inputs": [
+        {
+          "metric": "additional_paid_in_capital",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Additional Paid-in Capital"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "treasury_stock",
+    "type": "actual",
+    "definition": "Value of shares repurchased by the company.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "treasury_stock",
+      "inputs": [
+        {
+          "metric": "treasury_stock",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Treasury Stock"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "equity",
+    "type": "actual",
+    "definition": "Shareholders' residual claim on assets after liabilities.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "equity",
+      "inputs": [
+        {
+          "metric": "equity",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Total Shareholders Equity",
+        "Total Equity"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "invested_capital",
+    "type": "derived",
+    "definition": "Standardized invested-capital proxy: shareholder equity plus total interest-bearing debt minus cash and marketable securities.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "equity + total_debt - cash - marketable_securities",
+      "inputs": [
+        {
+          "metric": "equity",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "total_debt",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "cash",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "marketable_securities",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "equity",
+        "direction": "positive"
+      },
+      {
+        "metric": "total_debt",
+        "direction": "positive"
+      },
+      {
+        "metric": "cash",
+        "direction": "negative"
+      },
+      {
+        "metric": "marketable_securities",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "shares_outstanding_basic",
+    "type": "actual",
+    "definition": "Number of common shares outstanding at the reporting date.",
+    "unit": "count",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "shares_outstanding_basic",
+      "inputs": [
+        {
+          "metric": "shares_outstanding_basic",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Basic Shares Outstanding",
+        "Common Shares Outstanding"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "shares_outstanding_diluted",
+    "type": "actual",
+    "definition": "Fully diluted shares outstanding at the reporting date, when such a point-in-time measure is reported.",
+    "unit": "count",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "shares_outstanding_diluted",
+      "inputs": [
+        {
+          "metric": "shares_outstanding_diluted",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Diluted Shares Outstanding"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "weighted_average_shares_basic",
+    "type": "actual",
+    "definition": "Weighted-average number of common shares outstanding during the reporting period for basic EPS.",
+    "unit": "count",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "weighted_average_shares_basic",
+      "inputs": [
+        {
+          "metric": "weighted_average_shares_basic",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Weighted Average Shares Basic",
+        "Weighted Average Common Shares Outstanding - Basic"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "weighted_average_shares_diluted",
+    "type": "actual",
+    "definition": "Weighted-average number of shares used for diluted EPS after including applicable dilutive potential common shares.",
+    "unit": "count",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "weighted_average_shares_diluted",
+      "inputs": [
+        {
+          "metric": "weighted_average_shares_diluted",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Weighted Average Shares Diluted",
+        "Weighted Average Common Shares Outstanding - Diluted"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "revenue",
+    "type": "actual",
+    "definition": "Total value of goods/services sold in a period, before expenses.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "revenue",
+      "inputs": [
+        {
+          "metric": "revenue",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Total Revenue",
+        "Net Sales",
+        "Revenue from Operations"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "net_credit_sales",
+    "type": "actual",
+    "definition": "Sales made on credit during the period, net of returns, allowances and related adjustments.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "net_credit_sales",
+      "inputs": [
+        {
+          "metric": "net_credit_sales",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Net Credit Sales",
+        "Credit Sales"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "cogs",
+    "type": "actual",
+    "definition": "Direct costs attributable to producing goods/services sold.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "cogs",
+      "inputs": [
+        {
+          "metric": "cogs",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Cost of Goods Sold",
+        "Cost of Sales",
+        "Cost of Revenue"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "sga",
+    "type": "actual",
+    "definition": "Selling, general and administrative expenses.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "sga",
+      "inputs": [
+        {
+          "metric": "sga",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "SG&A",
+        "Selling, General and Administrative Expenses"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "rd_expense",
+    "type": "actual",
+    "definition": "Research and development expenses.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "rd_expense",
+      "inputs": [
+        {
+          "metric": "rd_expense",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Research and Development",
+        "R&D Expense"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": "IFRS capitalizes qualifying development costs once specified criteria are met; US GAAP generally expenses research and development as incurred, subject to specific exceptions.",
+    "source": "company filing"
+  },
+  {
+    "metric": "da_expense",
+    "type": "actual",
+    "definition": "Depreciation and amortization expense for the period.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "da_expense",
+      "inputs": [
+        {
+          "metric": "da_expense",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Depreciation and Amortization",
+        "D&A"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "interest_expense",
+    "type": "actual",
+    "definition": "Cost of borrowing for the period.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "interest_expense",
+      "inputs": [
+        {
+          "metric": "interest_expense",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Interest Expense"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "tax_expense",
+    "type": "actual",
+    "definition": "Income tax expense for the period.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "tax_expense",
+      "inputs": [
+        {
+          "metric": "tax_expense",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Income Tax Expense",
+        "Provision for Income Taxes"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "pretax_income",
+    "type": "actual",
+    "definition": "Income before income tax expense for the reporting period.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "pretax_income",
+      "inputs": [
+        {
+          "metric": "pretax_income",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Income Before Taxes",
+        "Income Before Income Taxes",
+        "Profit Before Tax"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "effective_tax_rate",
+    "type": "derived",
+    "definition": "Effective income tax rate for the period, calculated as income tax expense divided by pretax income.",
+    "unit": "ratio",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "tax_expense / pretax_income",
+      "inputs": [
+        {
+          "metric": "tax_expense",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "pretax_income",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "tax_expense",
+        "direction": "positive"
+      },
+      {
+        "metric": "pretax_income",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "net_income",
+    "type": "actual",
+    "definition": "Bottom-line profit after all expenses and taxes.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "net_income",
+      "inputs": [
+        {
+          "metric": "net_income",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Net Income",
+        "Net Earnings",
+        "Profit for the Period"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "cfo",
+    "type": "actual",
+    "definition": "Cash generated from core business operations.",
+    "unit": "currency",
+    "statement": "cash_flow",
+    "period_type": "period",
+    "formula": {
+      "expression": "cfo",
+      "inputs": [
+        {
+          "metric": "cfo",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Cash Flow from Operations",
+        "Net Cash from Operating Activities"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": "Classification of interest and dividend cash flows can differ between IFRS and US GAAP, affecting subtotals.",
+    "source": "company filing"
+  },
+  {
+    "metric": "cfi",
+    "type": "actual",
+    "definition": "Cash used in or generated from investing activities.",
+    "unit": "currency",
+    "statement": "cash_flow",
+    "period_type": "period",
+    "formula": {
+      "expression": "cfi",
+      "inputs": [
+        {
+          "metric": "cfi",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Cash Flow from Investing",
+        "Net Cash from Investing Activities"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": "Classification of interest and dividend cash flows can differ between IFRS and US GAAP, affecting subtotals.",
+    "source": "company filing"
+  },
+  {
+    "metric": "cff",
+    "type": "actual",
+    "definition": "Cash used in or generated from financing activities.",
+    "unit": "currency",
+    "statement": "cash_flow",
+    "period_type": "period",
+    "formula": {
+      "expression": "cff",
+      "inputs": [
+        {
+          "metric": "cff",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Cash Flow from Financing",
+        "Net Cash from Financing Activities"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": "Classification of interest and dividend cash flows can differ between IFRS and US GAAP, affecting subtotals.",
+    "source": "company filing"
+  },
+  {
+    "metric": "capex",
+    "type": "actual",
+    "definition": "Positive-magnitude cash outflow for purchases of long-term productive assets during the period.",
+    "unit": "currency",
+    "statement": "cash_flow",
+    "period_type": "period",
+    "formula": {
+      "expression": "capex",
+      "inputs": [
+        {
+          "metric": "capex",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Capital Expenditures",
+        "Purchases of Property and Equipment"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "dividends_paid",
+    "type": "actual",
+    "definition": "Positive-magnitude cash outflow paid to shareholders as dividends during the period.",
+    "unit": "currency",
+    "statement": "cash_flow",
+    "period_type": "period",
+    "formula": {
+      "expression": "dividends_paid",
+      "inputs": [
+        {
+          "metric": "dividends_paid",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Dividends Paid"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "share_buybacks",
+    "type": "actual",
+    "definition": "Positive-magnitude cash outflow used to repurchase company shares during the period.",
+    "unit": "currency",
+    "statement": "cash_flow",
+    "period_type": "period",
+    "formula": {
+      "expression": "share_buybacks",
+      "inputs": [
+        {
+          "metric": "share_buybacks",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Repurchases of Common Stock",
+        "Share Buybacks"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "working_capital",
+    "type": "derived",
+    "definition": "Short-term liquidity buffer: current assets minus current liabilities.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "current_assets - current_liabilities",
+      "inputs": [
+        {
+          "metric": "current_assets",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "current_liabilities",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "current_assets",
+        "direction": "positive"
+      },
+      {
+        "metric": "current_liabilities",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "net_tangible_assets",
+    "type": "derived",
+    "definition": "Total assets minus goodwill, intangibles, and total liabilities.",
+    "unit": "currency",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "total_assets - goodwill - intangible_assets - total_liabilities",
+      "inputs": [
+        {
+          "metric": "total_assets",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "goodwill",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "intangible_assets",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "total_liabilities",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "total_assets",
+        "direction": "positive"
+      },
+      {
+        "metric": "goodwill",
+        "direction": "negative"
+      },
+      {
+        "metric": "intangible_assets",
+        "direction": "negative"
+      },
+      {
+        "metric": "total_liabilities",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "gross_profit",
+    "type": "derived",
+    "definition": "Revenue minus cost of goods sold.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "revenue - cogs",
+      "inputs": [
+        {
+          "metric": "revenue",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "cogs",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "revenue",
+        "direction": "positive"
+      },
+      {
+        "metric": "cogs",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "operating_expenses",
+    "type": "actual",
+    "definition": "Total operating expenses as reported by the company. Prefer the reported total because expense components such as D&A may be embedded in COGS, SG&A or R&D.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "operating_expenses",
+      "inputs": [
+        {
+          "metric": "operating_expenses",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Total Operating Expenses",
+        "Operating Expenses"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "operating_income",
+    "type": "actual",
+    "definition": "Profit from operations as reported by the company, before non-operating items, interest and income taxes.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "operating_income",
+      "inputs": [
+        {
+          "metric": "operating_income",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Operating Income",
+        "Operating Profit"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "nopat",
+    "type": "derived",
+    "definition": "Standardized NOPAT approximation: operating income after applying the period effective tax rate.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "operating_income * (1 - effective_tax_rate)",
+      "inputs": [
+        {
+          "metric": "operating_income",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "effective_tax_rate",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "operating_income",
+        "direction": "positive"
+      },
+      {
+        "metric": "effective_tax_rate",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "ebitda",
+    "type": "derived",
+    "definition": "Standardized EBITDA proxy calculated as reported operating income plus depreciation and amortization. It may differ from company-reported adjusted EBITDA.",
+    "unit": "currency",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "operating_income + da_expense",
+      "inputs": [
+        {
+          "metric": "operating_income",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "da_expense",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "operating_income",
+        "direction": "positive"
+      },
+      {
+        "metric": "da_expense",
+        "direction": "positive"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "eps_basic",
+    "type": "actual",
+    "definition": "Basic earnings per share as reported for the period.",
+    "unit": "currency_per_share",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "eps_basic",
+      "inputs": [
+        {
+          "metric": "eps_basic",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Basic EPS",
+        "Earnings Per Share - Basic"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "eps_diluted",
+    "type": "actual",
+    "definition": "Diluted earnings per share as reported for the period after applicable dilution adjustments.",
+    "unit": "currency_per_share",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "eps_diluted",
+      "inputs": [
+        {
+          "metric": "eps_diluted",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "identity",
+      "source_line_item": [
+        "Diluted EPS",
+        "Earnings Per Share - Diluted"
+      ]
+    },
+    "influenced_by": [],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "company filing"
+  },
+  {
+    "metric": "free_cash_flow",
+    "type": "derived",
+    "definition": "Cash generated from operations after capital expenditures.",
+    "unit": "currency",
+    "statement": "cash_flow",
+    "period_type": "period",
+    "formula": {
+      "expression": "cfo - capex",
+      "inputs": [
+        {
+          "metric": "cfo",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "capex",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "cfo",
+        "direction": "positive"
+      },
+      {
+        "metric": "capex",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "current_ratio",
+    "type": "derived",
+    "definition": "Ability to cover short-term liabilities with short-term assets.",
+    "unit": "ratio",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "current_assets / current_liabilities",
+      "inputs": [
+        {
+          "metric": "current_assets",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "current_liabilities",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "current_assets",
+        "direction": "positive"
+      },
+      {
+        "metric": "current_liabilities",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "quick_ratio",
+    "type": "derived",
+    "definition": "Ability to cover current liabilities with the most liquid current assets, excluding inventory and prepaid items.",
+    "unit": "ratio",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "(cash + marketable_securities + accounts_receivable) / current_liabilities",
+      "inputs": [
+        {
+          "metric": "cash",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "marketable_securities",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "accounts_receivable",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "current_liabilities",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "cash",
+        "direction": "positive"
+      },
+      {
+        "metric": "marketable_securities",
+        "direction": "positive"
+      },
+      {
+        "metric": "accounts_receivable",
+        "direction": "positive"
+      },
+      {
+        "metric": "current_liabilities",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "cash_ratio",
+    "type": "derived",
+    "definition": "Ability to cover current liabilities using cash, cash equivalents and highly liquid marketable securities.",
+    "unit": "ratio",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "(cash + marketable_securities) / current_liabilities",
+      "inputs": [
+        {
+          "metric": "cash",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "marketable_securities",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "current_liabilities",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "cash",
+        "direction": "positive"
+      },
+      {
+        "metric": "marketable_securities",
+        "direction": "positive"
+      },
+      {
+        "metric": "current_liabilities",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "debt_to_equity",
+    "type": "derived",
+    "definition": "Leverage measured as total debt relative to shareholder equity.",
+    "unit": "ratio",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "total_debt / equity",
+      "inputs": [
+        {
+          "metric": "total_debt",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "equity",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "total_debt",
+        "direction": "positive"
+      },
+      {
+        "metric": "equity",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "debt_to_assets",
+    "type": "derived",
+    "definition": "Proportion of total assets financed by debt.",
+    "unit": "ratio",
+    "statement": "balance_sheet",
+    "period_type": "point_in_time",
+    "formula": {
+      "expression": "total_debt / total_assets",
+      "inputs": [
+        {
+          "metric": "total_debt",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "total_assets",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "total_debt",
+        "direction": "positive"
+      },
+      {
+        "metric": "total_assets",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "interest_coverage",
+    "type": "derived",
+    "definition": "Ability to cover interest expense with operating income.",
+    "unit": "ratio",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "operating_income / interest_expense",
+      "inputs": [
+        {
+          "metric": "operating_income",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "interest_expense",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "operating_income",
+        "direction": "positive"
+      },
+      {
+        "metric": "interest_expense",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "gross_margin",
+    "type": "derived",
+    "definition": "Gross profit as a percentage of revenue.",
+    "unit": "ratio",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "gross_profit / revenue",
+      "inputs": [
+        {
+          "metric": "gross_profit",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "revenue",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "gross_profit",
+        "direction": "positive"
+      },
+      {
+        "metric": "revenue",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "operating_margin",
+    "type": "derived",
+    "definition": "Operating income as a percentage of revenue.",
+    "unit": "ratio",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "operating_income / revenue",
+      "inputs": [
+        {
+          "metric": "operating_income",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "revenue",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "operating_income",
+        "direction": "positive"
+      },
+      {
+        "metric": "revenue",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "net_margin",
+    "type": "derived",
+    "definition": "Net income as a percentage of revenue.",
+    "unit": "ratio",
+    "statement": "income_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "net_income / revenue",
+      "inputs": [
+        {
+          "metric": "net_income",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "revenue",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "net_income",
+        "direction": "positive"
+      },
+      {
+        "metric": "revenue",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "roe",
+    "type": "derived",
+    "definition": "Net income generated per unit of shareholder equity.",
+    "unit": "ratio",
+    "statement": "cross_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "net_income / equity",
+      "inputs": [
+        {
+          "metric": "net_income",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "equity",
+          "alignment": "average_over_period"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "net_income",
+        "direction": "positive"
+      },
+      {
+        "metric": "equity",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "roa",
+    "type": "derived",
+    "definition": "Net income generated per unit of total assets.",
+    "unit": "ratio",
+    "statement": "cross_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "net_income / total_assets",
+      "inputs": [
+        {
+          "metric": "net_income",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "total_assets",
+          "alignment": "average_over_period"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "net_income",
+        "direction": "positive"
+      },
+      {
+        "metric": "total_assets",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "roic",
+    "type": "derived",
+    "definition": "Standardized return on invested capital: NOPAT divided by average invested capital.",
+    "unit": "ratio",
+    "statement": "cross_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "nopat / invested_capital",
+      "inputs": [
+        {
+          "metric": "nopat",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "invested_capital",
+          "alignment": "average_over_period"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "nopat",
+        "direction": "positive"
+      },
+      {
+        "metric": "invested_capital",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": null,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "asset_turnover",
+    "type": "derived",
+    "definition": "Revenue generated per unit of total assets.",
+    "unit": "ratio",
+    "statement": "cross_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "revenue / total_assets",
+      "inputs": [
+        {
+          "metric": "revenue",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "total_assets",
+          "alignment": "average_over_period"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "revenue",
+        "direction": "positive"
+      },
+      {
+        "metric": "total_assets",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "inventory_turnover",
+    "type": "derived",
+    "definition": "How many times inventory is sold and replaced over a period.",
+    "unit": "ratio",
+    "statement": "cross_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "cogs / inventory",
+      "inputs": [
+        {
+          "metric": "cogs",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "inventory",
+          "alignment": "average_over_period"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "cogs",
+        "direction": "positive"
+      },
+      {
+        "metric": "inventory",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "receivables_turnover",
+    "type": "derived",
+    "definition": "Net credit sales generated per unit of average accounts receivable.",
+    "unit": "ratio",
+    "statement": "cross_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "net_credit_sales / accounts_receivable",
+      "inputs": [
+        {
+          "metric": "net_credit_sales",
+          "alignment": "as_is"
+        },
+        {
+          "metric": "accounts_receivable",
+          "alignment": "average_over_period"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "net_credit_sales",
+        "direction": "positive"
+      },
+      {
+        "metric": "accounts_receivable",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  },
+  {
+    "metric": "days_sales_outstanding",
+    "type": "derived",
+    "definition": "Average number of days required to collect receivables generated from credit sales.",
+    "unit": "days",
+    "statement": "cross_statement",
+    "period_type": "period",
+    "formula": {
+      "expression": "(accounts_receivable / net_credit_sales) * 365",
+      "inputs": [
+        {
+          "metric": "accounts_receivable",
+          "alignment": "average_over_period"
+        },
+        {
+          "metric": "net_credit_sales",
+          "alignment": "as_is"
+        }
+      ],
+      "op": "arithmetic",
+      "source_line_item": []
+    },
+    "influenced_by": [
+      {
+        "metric": "accounts_receivable",
+        "direction": "positive"
+      },
+      {
+        "metric": "net_credit_sales",
+        "direction": "negative"
+      }
+    ],
+    "valid_range": {
+      "min": 0,
+      "max": null
+    },
+    "gaap_ifrs_variance": null,
+    "source": "derived"
+  }
+]

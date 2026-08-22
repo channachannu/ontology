@@ -1,0 +1,73 @@
+{
+  "Metric":
+[{
+  "metric": "",
+  "type": "actual | derived",
+  "definition": "",
+  "unit": "",
+  "statement": "balance_sheet | income_statement | cash_flow | cross_statement",
+  "period_type": "point_in_time | period",
+  "formula": {
+    "expression": "",
+    "inputs": [
+      {"metric": "", "alignment": "as_is | average_over_period | period_end | period_start"}
+    ],
+    "op": "identity | arithmetic",
+    "source_line_item": []
+  },
+  "influenced_by": [
+    {"metric": "", "direction": "positive | negative | conditional"}
+  ],
+  "valid_range": {"min": null, "max": null},
+  "gaap_ifrs_variance": null,
+  "source": ""
+}],
+"Concept":
+[
+  {
+  "concept": "",
+  "name": "",
+  "sense_number": 1,
+
+  "definition": "",
+
+  "concept_type": "instrument | institution | role | process | condition | concept | event",
+  "subtype": "",
+  "domain": [],
+  "part_of_speech": "noun | verb | adjective",
+
+  "synonyms": [],
+  "abbreviations": [],
+  "related_terms": [],
+  "broader_term": null,
+
+  "relationships": [
+    {
+      "relation": "is_a | related_to | references | part_of | superseded_by",
+      "target": ""
+    }
+  ],
+
+  "participants": [
+    {
+      "role": "",
+      "concept": ""
+    }
+  ],
+
+  "conditions": [],
+  "possible_outcomes": [],
+
+  "linked_metrics": [],
+
+  "usage_status": "current | archaic | historical | jurisdiction_specific",
+  "jurisdiction": [],
+  "historical_period": null,
+
+  "source": {
+    "name": "",
+    "source_type": ""
+  }
+}
+]
+}
