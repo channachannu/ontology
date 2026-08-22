@@ -8,89 +8,32 @@ Usage:
 """
 
 import os
+import json
+from pathlib import Path
 from anthropic import Anthropic
 from dotenv import load_dotenv
 load_dotenv()
 
 
 client = Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-ONTOLOGY =[{
-    "metric": "current_ratio",
-    "type": "derived",
-    "definition": "Ability to cover short-term liabilities with short-term assets.",
-    "unit": "ratio",
-    "statement": "cross_statement",
-    "period_type": "point_in_time",
-    "formula": {
-      "expression": "current_assets / current_liabilities",
-      "inputs": [
-        {"metric": "current_assets", "alignment": "as_is"},
-        {"metric": "current_liabilities", "alignment": "as_is"}
-      ],
-      "op": "arithmetic",
-      "source_line_item": []
-    },
-    "influenced_by": [
-      {"metric": "current_assets", "direction": "positive"},
-      {"metric": "current_liabilities", "direction": "negative"}
-    ],
-    "valid_range": {"min": 0, "max": None},
-    "gaap_ifrs_variance": None,
-    "source": "derived"
-  },
-  {
-    "metric": "roe",
-    "type": "derived",
-    "definition": "Net income generated per unit of shareholder equity.",
-    "unit": "ratio",
-    "statement": "cross_statement",
-    "period_type": "period",
-    "formula": {
-      "expression": "net_income / equity",
-      "inputs": [
-        {"metric": "net_income", "alignment": "as_is"},
-        {"metric": "equity", "alignment": "average_over_period"}
-      ],
-      "op": "arithmetic",
-      "source_line_item": []
-    },
-    "influenced_by": [
-      {"metric": "net_income", "direction": "positive"},
-      {"metric": "equity", "direction": "negative"}
-    ],
-    "valid_range": {"min": None, "max": None},
-    "gaap_ifrs_variance": None,
-    "source": "derived"
-  },
-  {
-  "metric": "adjusted_operating_margin",
-  "type": "derived",
-  "definition": "Operating margin adjusted to exclude one-time restructuring costs and add back stock-based compensation, expressed as a percentage of revenue.",
-  "unit": "ratio",
-  "statement": "cross_statement",
-  "period_type": "period",
-  "formula": {
-    "expression": "(operating_income + restructuring_costs + stock_based_compensation) / revenue",
-    "inputs": [
-      {"metric": "operating_income", "alignment": "as_is"},
-      {"metric": "restructuring_costs", "alignment": "as_is"},
-      {"metric": "stock_based_compensation", "alignment": "as_is"},
-      {"metric": "revenue", "alignment": "as_is"}
-    ],
-    "op": "arithmetic",
-    "source_line_item": []
-  },
-  "influenced_by": [
-    {"metric": "operating_income", "direction": "positive"},
-    {"metric": "restructuring_costs", "direction": "positive"},
-    {"metric": "stock_based_compensation", "direction": "positive"},
-    {"metric": "revenue", "direction": "negative"}
-  ],
-  "valid_range": {"min": None, "max": None},
-  "gaap_ifrs_variance": None,
-  "source": "internal definition"
-}
-]
+
+# Load the metric ontology from the schema files (single source of truth —
+# avoids the ontology drifting out of sync with a hardcoded inline copy).
+SCHEMA_DIR = Path(__file__).parent / "Schemas"
+ONTOLOGY_PATH = SCHEMA_DIR / "fin_metrics_ontology_v2.json"
+
+with open(ONTOLOGY_PATH, encoding="utf-8") as f:
+    full_ontology = json.load(f)
+
+# Only pull in the metrics relevant to this test query, so the system prompt
+# doesn't balloon with the entire ontology on every call.
+RELEVANT_METRICS = {"current_ratio"}
+ONTOLOGY = [m for m in full_ontology if m["metric"] in RELEVANT_METRICS]
+
+if len(ONTOLOGY) != len(RELEVANT_METRICS):
+    found = {m["metric"] for m in ONTOLOGY}
+    missing = RELEVANT_METRICS - found
+    raise ValueError(f"Expected metrics not found in {ONTOLOGY_PATH.name}: {missing}")
 
 
 QUERY = ("""

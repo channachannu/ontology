@@ -33,3 +33,4 @@ maps/
 *.tmp
 *.log
 .env
+.ipynb
