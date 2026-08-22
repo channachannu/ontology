@@ -678,22 +678,6 @@ The next iterations of the grounding test can focus on:
 
 ---
 
-# Notebook
-
-## `test.ipynb`
-
-The notebook can be used for exploratory work such as:
-
-- Inspecting ontology records
-- Testing relationships
-- Query experiments
-- Schema validation
-- Graph exploration
-- Retrieval experiments
-- Comparing ontology versions
-
----
-
 # Example: Loading the Metrics Ontology
 
 ```python
